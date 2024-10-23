@@ -303,7 +303,7 @@ export default {
      this.map = new window.google.maps.Map(this.$refs.map, {
        center: { lat: this.lat, lng: this.lng },
        zoom: 20,
-       mapTypeId: "roadmap",
+       mapTypeId: "satellite",
      });
      console.log(window?.google?.maps.places);
 
