@@ -1,5 +1,9 @@
 <template>
-  
+
+    <nav>
+      <router-link to="/" > GOOGLE </router-link> |
+      <router-link to="/mapbox">MAPBOX</router-link>
+    </nav>
   <router-view/>
 </template>
 

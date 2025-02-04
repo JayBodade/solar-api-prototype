@@ -3609,7 +3609,7 @@ export default {
           ${wifiSite.carriers.map((carrier) => {
               return ` <div  >
           <strong style="color: #85c2f3;;">${carrier.carriername}</strong> 
-             (${carrier.xnet_code == 'O' ? 'OnNet' : 'NerNet'})
+             (${carrier.xnet_code == 'O' ? 'OnNet' : 'NearNet'})
           </div>`
             })
         }
@@ -3667,13 +3667,7 @@ export default {
 
 }
 </script>
-<style>
-:root {
-  --building-color: #FF9800;
-  --house-color: #0288D1;
-  --shop-color: #7B1FA2;
-  --warehouse-color: #558B2F;
-}
+<style >
 
 /*
  * Optional: Makes the sample page fill the window.
@@ -3704,6 +3698,7 @@ body {
 /*
  * wifiSite styles in unhighlighted state.
  */
+ 
 .wifiSite {
   /* align-items: center; */
   background-color: #FFFFFF;

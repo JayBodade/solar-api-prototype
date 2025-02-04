@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import SolarView from '@/views/SolarView.vue'
+import MapboxView from '@/views/MapboxView.vue'
 
 const routes = [
   {
@@ -20,6 +21,11 @@ const routes = [
     path:'/solar',
     name:'solar',
     component:SolarView
+  },
+  {
+    path:'/mapbox',
+    name:'mapbox',
+    component:MapboxView,
   }
 ]
 
